@@ -5,4 +5,7 @@ export class DemoQaHomePage {
     PageElements.located(By.css('.card-body h5'))
       .describedAs('home page card titles');
 
+  static cardNamed = (name: string) =>
+    PageElement.located(By.cssContainingText('.card-body h5', name))
+      .describedAs(`"${ name }" card`);
 }
