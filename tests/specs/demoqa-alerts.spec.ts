@@ -6,9 +6,9 @@ import { OpenDemoQaHome } from '../tasks/OpenDemoQaHome';
 import { TriggerAlert } from '../tasks/TriggerAlert';
 import { TriggerNewWindow } from '../tasks/TriggerNewWindow';
 
-describe('Caso 4 - DemoQA Alerts, Frame & Windows', () => {
+describe('Case 4 - DemoQA Alerts, Frame & Windows', () => {
 
-  it('muestra una alerta y abre una nueva ventana', async ({ actor, page }) => {
+  it('displays an alert and opens a new window', async ({ actor, page }) => {
 
     await page.goto('https://demoqa.com/alerts', { waitUntil: 'domcontentloaded'});
     await actor.attemptsTo(
